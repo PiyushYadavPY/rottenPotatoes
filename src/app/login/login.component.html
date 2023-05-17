@@ -1,0 +1,34 @@
+<div class="login-container">
+    <img src="assets/images/film.jpg" class="film" alt="">
+    <div class="logo">Rotten Potatoes</div>
+    <div class="desc">
+
+        Welcome to Rotten Potatoes, the ultimate destination for all your movie and TV show reviews! Just like a basket
+        of not-so-fresh potatoes,
+        our platform is designed to bring you the most honest and critical insights into the world of entertainment.
+        Whether you're a seasoned cinephile or simply looking for your
+        next binge-worthy series, Rotten Potatoes is here to serve up the raw truth, straight from the trenches of film
+        and television.
+    </div>
+
+
+    <div class="login-form">
+        <div class="form-group">
+            <label for="uname">Username</label>
+            <input type="text" name="uname" class="form-Input"  [(ngModel)] = "username"/>
+
+        </div>
+
+        <div class="from-group">
+            <label for="pword">Password</label>
+            <input type="password" name="pword" id="" class="form-Input"  [(ngModel)] = "password"/>
+        </div>
+
+        <div class="btn-container">
+            <div class="error">{{ errorMsg }}</div>
+            <button class=" btn btn-info" (click)="login()">LogIn</button>
+            <!-- <button class="btn btn-dark">LogIn</button> -->
+        </div>
+    </div>
+
+</div>
